@@ -32,20 +32,22 @@ function Header() {
         <div className={`${WRAPPER_CLASSES} flex justify-between items-center`}>
           {/* Social */}
           <div className="flex items-center gap-4 text-sm">
-            <a href="#" className="hover:text-blue-400"><FaFacebook /></a>
-            <a href="#" className="hover:text-pink-400"><FaInstagram /></a>
-            <a href="#" className="hover:text-blue-300"><FaTwitter /></a>
+            <a href="https://www.facebook.com/" className="hover:text-blue-400"><FaFacebook /></a>
+            <a href="https://www.instagram.com/" className="hover:text-pink-400"><FaInstagram /></a>
+            <a href="https://twitter.com/" className="hover:text-blue-300"><FaTwitter /></a>
           </div>
 
           {/* Contact */}
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <FaPhone className="text-[10px]" />
-              <span>1234567889</span>
+              <a href="tel:1234567889" className="hover:text-blue-400">1234567889</a>
+            
             </div>
             <div className="flex items-center gap-2">
               <FaEnvelope className="text-[10px]" />
-              <span>selvalakshmandco@gmail.com</span>
+              <a href="mailto:selvalakshmandco@gmail.com" className="hover:text-blue-400">selvalakshmandco@gmail.com</a>
+            
             </div>
           </div>
         </div>
