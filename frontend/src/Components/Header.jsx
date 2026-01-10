@@ -100,12 +100,21 @@ function Header() {
               <div className="relative">
                 {/* Avatar */}
                 <div
-                  onClick={() => setOpen(!open)}
-                  className="w-10 h-10 rounded-full bg-orange-500 text-white
-                             flex items-center justify-center font-bold cursor-pointer select-none"
-                >
-                  {getInitials(user.name)}
-                </div>
+  onClick={() => setOpen(!open)}
+  className="w-10 h-10 rounded-full bg-orange-500
+             flex items-center justify-center text-white font-bold cursor-pointer overflow-hidden"
+>
+  {user.avatar ? (
+    <img
+      src={`http://localhost:3001/uploads/${user.avatar}`}
+      className="w-full h-full object-cover"
+      alt="avatar"
+    />
+  ) : (
+    getInitials(user.name)
+  )}
+</div>
+
 
                 {/* Dropdown */}
                 {open && (

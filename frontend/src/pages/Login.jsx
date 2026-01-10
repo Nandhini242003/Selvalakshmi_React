@@ -45,10 +45,10 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gray-100">
+    <div >
       <form
         onSubmit={handleLogin}
-        className="bg-white p-8 rounded shadow-md w-96"
+        className="bg-gray-100 p-8 rounded shadow-md w-96 mx-auto mt-20"
       >
         <h2 className="text-2xl font-bold mb-6">Login</h2>
 
